@@ -12,9 +12,9 @@ public class Palindrome {
         while (start <= end) {
             charStart = s.charAt(start);
             charEnd = s.charAt(end);
-            if (!Character.isLetter(charStart)) {
+            if (!Character.isLetterOrDigit(charStart)) {
                 start ++;
-            } else if (!Character.isLetter(charEnd)) {
+            } else if (!Character.isLetterOrDigit(charEnd)) {
                 end --;
             } else {
                 if (Character.toLowerCase(charStart) != Character.toLowerCase(charEnd)) {
