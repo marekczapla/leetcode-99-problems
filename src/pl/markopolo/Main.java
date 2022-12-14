@@ -1,8 +1,6 @@
 package pl.markopolo;
 
-import java.io.PrintStream;
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {

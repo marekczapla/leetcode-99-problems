@@ -1,20 +1,25 @@
 package pl.markopolo;
 
+import java.util.ArrayList;
+
 public class FizzBuzz {
-    public static void main(String[] args) {
-        for(int i = 1; i <= 100; i++) {
+    public ArrayList<String> fizzBuzz(int n) {
+        ArrayList<String> result = new ArrayList<>();
+
+        for(int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz");
+                 result.add("FizzBuzz");
             }
             else if (i % 3 == 0) {
-                System.out.println("Fizz");
+                result.add("Fizz");
             }
             else if (i % 5 == 0) {
-                System.out.println("Buzz");
+                result.add("Buzz");
             }
             else {
-                System.out.println(i);
+                result.add(String.valueOf(i));
             }
         }
+        return result;
     }
 }
