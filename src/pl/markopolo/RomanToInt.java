@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RomanToInt {
+
     public int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);
