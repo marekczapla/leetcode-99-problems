@@ -6,7 +6,7 @@ public class LargestNumber {
     public String largestNumber(int[] nums) {
         String result = "";
 
-        for(int i=0; i < nums.length; i++) {
+        for(int i = 0; i < nums.length; i++) {
             for(int j = i + 1; j<nums.length; j++) {
                 String s1 = Integer.toString(nums[i]);
                 String s2 = Integer.toString(nums[j]);
